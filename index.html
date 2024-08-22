@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Story by HTML5 UP</title>
@@ -11,387 +6,289 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Top Panel Styling */
+			#top-panel {
+				background-color: #1a1a1a;
+				color: #fff;
+				padding: 3px 10px; /* Thinner padding */
+				position: fixed;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1000;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+				transition: all 0.3s ease;
+				font-family: Arial, sans-serif;
+				font-size: 12px; /* Smaller font size */
+				height: 40px; /* Thinner height */
+			}
+			#top-panel.scrolled {
+				background-color: rgba(26, 26, 26, 0.9);
+				padding: 2px 8px; /* Even thinner when scrolled */
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+				height: 35px; /* Smaller height when scrolled */
+			}
+
+			/* Dropdown Menu Styling */
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropbtn {
+    background-color: #ffffff; /* Match the panel background */
+    color: #ffffff; /* Set text color to white */
+    padding: 4px 10px; /* Adjust padding for rectangular shape */
+    font-size: 12px; /* Keep the font size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners for rectangle */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light white background on hover */
+    color: #ffffff; /* Keep text color white on hover */
+}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #333;
+				min-width: 120px; /* Adjusted width for a more compact menu */
+				box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2);
+				z-index: 1;
+				right: 0;
+				border-radius: 3px; /* Match the button’s radius */
+			}
+
+			.dropdown-content a {
+				color: white;
+				padding: 8px 10px; /* Smaller padding */
+				text-decoration: none;
+				display: block;
+				text-align: left;
+				transition: background-color 0.3s ease;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				font-size: 12px; /* Smaller font size */
+			}
+
+			.dropdown-content a:hover {
+				background-color: #575757;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+
+			.dropdown:hover .dropbtn {
+				background-color: #e0e0e0;
+			}
+
+			/* Footer Styling */
+			footer.wrapper.style1.align-center {
+				background-color: #2c2c2c;
+				padding: 20px 0; /* Smaller padding */
+				color: #f0f0f0;
+			}
+
+			footer .inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 14px;
+			}
+
+			footer .icons {
+				margin-bottom: 10px;
+			}
+
+			footer .icons li {
+				display: inline-block;
+				margin: 0 10px;
+			}
+
+			footer .icons a {
+				color: #f0f0f0;
+				font-size: 18px;
+			}
+
+			footer p {
+				color: #ccc;
+				font-size: 12px;
+				margin: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Hi, I'm Khalilullah Mohman.</h1>
-							<p class="major">Innovative Software Engineer </br>Driven by Technology and Creativity </br>Passionate About Cloud Computing </br>Dedicated to Lifelong Learning and Growth </p> 
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/IMG_5290_copy.JPG" alt="" />
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Headstarter AI Fellow</h2>
-							<p>As a Software Engineering Fellow at Headstarter AI, I developed and deployed 3 AI-based solutions, improving algorithm efficiency by 15% through advanced algorithms and machine learning fundamentals. Completed 5 real-world application projects, enhancing technical skills and gaining hands-on experience in software development.</p>
-							<ul class="actions stacked">
-								<li><a href="Mohman_s_Resume.pdf" class="button">View My Resume</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Headstarter.jpeg" alt="" />
-						</div>
-					</section>
-
-				<!-- Three -->
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-	<div class="content">
-		<h2>Projects & Achievements</h2>
-		<p><strong>AWS Certified Solutions Architect – Professional</strong><br>
-			Completed the AWS Certified Solutions Architect – Professional certification, gaining expertise in architecting and deploying scalable applications on AWS.</p>
-		<p><strong>AWS Cloud Quest</strong><br>
-			Earned multiple AWS badges, gaining expertise in Cloud, Compute, Storage, Database, Networking, Cloud Ops, and Security.</p>
-		<p><strong>Advanced Technical Interview Preparation (TIP103)</strong><br>
-			Focused on data structures, algorithms, system design, and advanced coding skills.</p>
-		<ul class="actions stacked">
-			<li><a href="#" class="button">Learn More</a></li>
-		</ul>
-	</div>
-	<div class="image">
-		<img src="images/profile_pic_crop.jpg" alt="Khalilullah Mohman" />
-	</div>
-</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Additional Projects & Achievements</h2>
-        <p>Here are some of the additional projects and achievements highlighting my expertise in AWS and other technologies:</p>
-        <h3>AWS Skills</h3>
-        <ul>
-            <li>Compute: EC2, Lambda</li>
-            <li>Storage: S3, Glacier</li>
-            <li>Database: RDS, DynamoDB</li>
-            <li>Networking: VPC, Route 53</li>
-            <li>Security: IAM, KMS</li>
-            <li>Monitoring and Management: CloudWatch, CloudTrail</li>
-        </ul>
-        <h3>Projects</h3>
-        <ul>
-            <li>
-                <strong>Project 1: Serverless Web Application</strong>
-                <p>Developed a serverless web application using AWS Lambda, API Gateway, DynamoDB, and S3. The application efficiently handles user requests and stores data in a highly scalable and available manner.</p>
-            </li>
-            <li>
-                <strong>Project 2: Data Lake Implementation</strong>
-                <p>Implemented a data lake on AWS using S3, Glue, and Athena. The project involved setting up data ingestion pipelines, transforming data, and performing queries to derive insights from the data stored in the lake.</p>
-            </li>
-            <li>
-                <strong>Project 3: Scalable Web Hosting</strong>
-                <p>Configured a scalable web hosting environment using EC2, Elastic Load Balancer, and Auto Scaling groups. This setup ensured high availability and fault tolerance for a web application under varying load conditions.</p>
-            </li>
-        </ul>
-        <ul class="actions stacked">
-            <li><a href="#" class="button">Learn More</a></li>
-        </ul>
-    </div>
-    <div class="image">
-        <img src="images/AWS.jpg" alt="" />
-    </div>
-</section>
-
-				<!-- Five commented
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Section 5</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
-
-						<!-- Gallery 
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-					</section>
-				-->
-
-					
-				<!-- Six commented
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Section 6</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
-					-->
-
-
-
-				<!-- Seven commented 
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
-					</section>
-					-->
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/kmohman" class="icon brands style2 fa fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/khalilullah-mohman-045161244/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<!--<li><a href="kmohman2@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li> -->
-							</ul>
-							<p>&copy; 
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-
-								 Khalilullah Mohman &nbsp; 
-								 <!-- <a href="v1/index1.html"> Version 1</a> | -->
-							
-							</p>
-						</div>
-					</footer>
-
+		<!-- Top Panel -->
+		<div id="top-panel">
+			<div class="dropdown">
+				<button class="dropbtn">Menu</button>
+				<div class="dropdown-content">
+					<a href="#projects">Projects</a>
+					<a href="Mohman_s_Resume.pdf">Resume</a>
+					<a href="#first">About</a>
+				</div>
 			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided" style="padding-top: 45px;"> <!-- Adjusted padding to match thinner panel -->
+
+			<!-- One -->
+			<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+				<div class="content">
+					<h1>Hi, I'm Khalilullah Mohman.</h1>
+					<p class="major">Innovative Software Engineer </br>Driven by Technology and Creativity </br>Passionate About Cloud Computing </br>Dedicated to Lifelong Learning and Growth </p> 
+					<ul class="actions stacked">
+						<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="images/IMG_5290_copy.JPG" alt="" />
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+				<div class="content">
+					<h2>Headstarter AI Fellow</h2>
+					<p>As a Software Engineering Fellow at Headstarter AI, I developed and deployed 3 AI-based solutions, improving algorithm efficiency by 15% through advanced algorithms and machine learning fundamentals. Completed 5 real-world application projects, enhancing technical skills and gaining hands-on experience in software development.</p>
+					<ul class="actions stacked">
+						<li><a href="Mohman_s_Resume.pdf" class="button">View My Resume</a></li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="images/Headstarter.jpeg" alt="" />
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+				<div class="content">
+					<h2>Projects & Achievements</h2>
+					<p><strong>AWS Certified Solutions Architect – Professional</strong><br>
+						Completed the AWS Certified Solutions Architect – Professional certification, gaining expertise in architecting and deploying scalable applications on AWS.</p>
+					<p><strong>AWS Cloud Quest</strong><br>
+						Earned multiple AWS badges, gaining expertise in Cloud, Compute, Storage, Database, Networking, Cloud Ops, and Security.</p>
+					<p><strong>Advanced Technical Interview Preparation (TIP103)</strong><br>
+						Focused on data structures, algorithms, system design, and advanced coding skills.</p>
+					<ul class="actions stacked">
+						<li><a href="#projects" class="button">View My Projects</a></li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="images/profile_pic_crop.jpg" alt="Khalilullah Mohman" />
+				</div>
+			</section>
+
+			<!-- Four -->
+			<section id="projects" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+				<div class="content">
+					<h2>Additional Projects & Achievements</h2>
+					<p>Here are some of the additional projects and achievements highlighting my expertise in AWS and other technologies:</p>
+					<h3>AWS Skills</h3>
+					<ul>
+						<li>Compute: EC2, Lambda</li>
+						<li>Storage: S3, Glacier</li>
+						<li>Database: RDS, DynamoDB</li>
+						<li>Networking: VPC, Route 53</li>
+						<li>Security: IAM, KMS</li>
+						<li>Monitoring and Management: CloudWatch, CloudTrail</li>
+					</ul>
+					<h3>Projects</h3>
+					<ul>
+						<li>
+							<strong>Project 1: Serverless Web Application</strong>
+							<p>Developed a serverless web application using AWS Lambda, API Gateway, DynamoDB, and S3. The application efficiently handles user requests and stores data in a highly scalable and available manner.</p>
+						</li>
+						<li>
+							<strong>Project 2: Data Lake Implementation</strong>
+							<p>Implemented a data lake on AWS using S3, Glue, and Athena. The project involved setting up data ingestion pipelines, transforming data, and performing queries to derive insights from the data stored in the lake.</p>
+						</li>
+						<li>
+							<strong>Project 3: Scalable Web Hosting</strong>
+							<p>Configured a scalable web hosting environment using EC2, Elastic Load Balancer, and Auto Scaling groups. This setup ensured high availability and fault tolerance for a web application under varying load conditions.</p>
+						</li>
+						<li>
+							<strong>Project 4: Personal Website</strong>
+							<p>Created a personal website using HTML5, CSS3, and JavaScript to showcase my portfolio and blog.</p>
+							<ul class="actions stacked">
+								<li><a href="file:///C:/Users/Khalilullah%20Mohman/Desktop/Headstarter%20AI%20-%20Projects/Personal%20Website/index.html" class="button">Visit Site</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>Project 5: Pantry Tracker App</strong>
+							<p>Developed a pantry tracker application using React, Firebase, and Vercel. This app helps users keep track of their pantry items, including quantities and expiration dates.</p>
+							<ul class="actions stacked">
+								<li><a href="https://pantry-tracker-app-nextjs-deploy.vercel.app/" class="button">Visit Site</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>Project 6: Chatbot AI App</strong>
+							<p>Created a chatbot application using AI technologies and integrated with Pinecone and OpenAI to deliver intelligent conversations.</p>
+							<ul class="actions stacked">
+								<li><a href="https://support-chatbot-ai-git-main-khalilullah-mohmans-projects.vercel.app/" class="button">Visit Site</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>Project 7: Flashcard-SaaS App</strong>
+							<p>Developed a SaaS application for creating and managing flashcards using Next.js, Firebase, and MUI. The application provides an intuitive interface for learning and reviewing materials.</p>
+							<ul class="actions stacked">
+								<li><a href="https://flashcard-saas-ai-bdieej.next.genez.io/" class="button">Visit Site</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="images/image.jpeg" alt="" />
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="wrapper style1 align-center" style="background-color: #2c2c2c; padding: 1px 0; color: #f0f0f071; font-size: 8px;">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/kmohman" class="icon brands style2 fa fa-github" style="color: #f0f0f0;"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/khalilullah-mohman-045161244/" class="icon brands style2 fa-linkedin-in" style="color: #f0f0f0;"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<p style="color: #ccc; font-size: 18px;">&copy; 
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						Khalilullah Mohman &nbsp;
+					</p>
+				</div>
+			</footer>
+
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			// JavaScript to handle the scroll effect on the top panel
+			window.onscroll = function() {
+				var topPanel = document.getElementById('top-panel');
+				if (window.scrollY > 50) {
+					topPanel.classList.add('scrolled');
+				} else {
+					topPanel.classList.remove('scrolled');
+				}
+			};
+		</script>
 
 	</body>
 </html>
